@@ -1,0 +1,45 @@
+programa
+{ inclua biblioteca Matematica
+	funcao inicio()
+	{	real arredondamento
+		inteiro n
+		inteiro x
+		inteiro maior
+		inteiro menor
+		inteiro p=0
+		inteiro i=0
+		escreva("Digite quantos números deseja inserir: \n")
+		leia(n)
+		escreva("\nDigite o numero: \n")
+		leia(x)
+		maior=x
+		menor=x
+		 para(inteiro c=1;c<n;c++){
+		 	
+		 	escreva("\nDigite o numero: \n")
+			leia(x)
+			se(x>maior){
+				maior=x
+			}
+			se(x<menor){
+			menor=x
+			}
+			se(x%2==0){
+				p++
+			}
+			senao{
+				i++
+			}
+			escreva("Maior numero: ",maior)
+			escreva("\nMenor numero: ",menor,"\n")
+		}
+		real porcentagem
+		se(n>0){
+			porcentagem=(n/100.00)*p
+			escreva("Porcentagem de números pares: ",porcentagem,"%\n",p," números pares")
+		}
+		
+	}
+}
+
+
